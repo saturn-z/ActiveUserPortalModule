@@ -1,0 +1,28 @@
+{
+    "name": "saturnZ/ModuleActiveUser",
+    "type": "phpbb-extension",
+    "description": "The module for the Board3 portal that displays the winners of last month in the contest for the most active user.",
+    "homepage": "http://www.ribak72.ru",
+    "version": "0.0.1",
+    "time": "2015-04-26",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "saturn-z",
+            "homepage": "http://www.ribak72.ru",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+      "phpbb/epv": "dev-master"
+    },
+    "extra": {
+        "display-name": "ActiveUser module Board3 Portal",
+        "soft-require": {
+            "phpbb/phpbb": "3.1.*@dev"
+        }
+    }
+}

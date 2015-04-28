@@ -1,0 +1,26 @@
+services:
+    saturnZ.ModuleActiveUser.listener:
+        class: saturnZ\ModuleActiveUser\event\listener
+        arguments:
+            - %core.root_path%
+            - @template
+        tags:
+            - { name: event.listener }
+
+    board3.portal.module.activeuser:
+        class: board3\portal\modules\activeuser
+        arguments:
+            - @config
+            - @config_text
+            - @request
+            - @pagination
+            - @dbal.conn
+            - @auth
+            - @template
+            - @user
+            - @controller.helper
+            - %core.root_path%
+            - %core.php_ext%
+            - %core.table_prefix%
+        tags:
+            - { name: board3.portal.module }
